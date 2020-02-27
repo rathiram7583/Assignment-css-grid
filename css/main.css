@@ -1,0 +1,172 @@
+*{
+    font-size: 16px;
+    margin:0;
+    padding:0;
+}
+
+body{
+    display:grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh ;
+    grid-template-areas:"title login" 
+    "navigation navigation" 
+    "sidebar sidebar"  
+    "welcome welcome" 
+    "events events" 
+    "promotions promotions" 
+    "contest contest" 
+    "footer footer";
+}
+
+.title{
+    background: lightsalmon;
+    grid-area:title ;
+}
+.login{
+    background: lightblue;
+    grid-area: login;}
+
+.navigation{
+    background: lightgreen;
+    grid-area:navigation}
+
+.sidebar{
+    background:lightpink;
+    grid-area: sidebar;
+
+ }
+.welcome{
+    background: lime;
+    grid-area: welcome;}
+
+.events{
+    background: maroon;
+    grid-area: events;}
+
+.promotion{
+    background: mediumpurple;
+    grid-area: promotion;}
+
+.contest{
+    background: midnightblue;
+    grid-area:contest}
+
+.footer{
+    background: orangered;
+    grid-area:footer}
+
+
+
+    @media screen and (min-width: 500px)
+{
+    body{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 30vh 30vh 30vh 30vh 30vh 30vh 30vh;
+        grid-template-areas:"title login" 
+                "navigation navigation"
+                "welcome welcome"
+                "sidebar sidebar"  
+                "events promotions"
+    
+                "contest contest" 
+                 "footer footer";
+    }
+
+    .title{
+        background: lightsalmon;
+        grid-area:title ;
+    }
+    .login{
+        background: lightblue;
+        grid-area: login;}
+    
+    .navigation{
+        background: lightgreen;
+        grid-area:navigation}
+    
+    .sidebar{
+        background:lightpink;
+        grid-area: sidebar;
+    
+     }
+    .welcome{
+        background: lime;
+        grid-area: welcome;}
+    
+    .events{
+        background: maroon;
+        grid-area: events;}
+    
+    .promotion{
+        background: mediumpurple;
+        grid-area: promotion;}
+    
+    .contest{
+        background: midnightblue;
+        grid-area:contest}
+    
+    .footer{
+        background: orangered;
+        grid-area:footer}
+    
+
+
+        @media screen and (min-width: 1024px)
+{
+    body{
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 30vh 30vh 30vh 30vh 30vh ;
+        grid-template-areas:"title navigation navigation login" 
+                
+                "welcome welcome welcome welcome"
+                 
+                "events promotions sidebar sidebar"
+    
+                "contest contest sidebar sidebar" 
+                 "footer footer sidebar sidebar";
+    }
+
+    .title{
+        background: lightsalmon;
+        grid-area:title ;
+    }
+    .login{
+        background: lightblue;
+        grid-area: login;}
+    
+    .navigation{
+        background: lightgreen;
+        grid-area:navigation}
+    
+    .sidebar{
+        background:lightpink;
+        grid-area: sidebar;
+    
+     }
+    .welcome{
+        background: lime;
+        grid-area: welcome;}
+    
+    .events{
+        background: maroon;
+        grid-area: events;}
+    
+    .promotion{
+        background: mediumpurple;
+        grid-area: promotion;}
+    
+    .contest{
+        background: midnightblue;
+        grid-area:contest}
+    
+    .footer{
+        background: orangered;
+        grid-area:footer}
+    
+    
+
+}
+
+
+
+
